@@ -1,0 +1,63 @@
+[
+    {
+      "id": 1,
+      "question": "Which of the following is an example of sustainable farming?",
+      "options": ["Intensive monoculture", "Organic farming", "Large-scale deforestation", "Indiscriminate pesticide use"],
+      "correctAnswer": 1
+    }
+    ,
+    {
+      "id": 2,
+      "question": "What is the main environmental impact of meat production?",
+      "options": ["Air pollution", "Deforestation", "Global warming", "Water pollution"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 3,
+      "question": "Which food is a sustainable source of protein?",
+      "options": ["Beef", "Quinoa", "Chicken", "Pork"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 4,
+      "question": "What percentage of greenhouse gas emissions is caused by the food industry?",
+      "options": ["10%", "25%", "50%", "75%"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 5,
+      "question": "What is the main cause of biodiversity loss in agricultural areas?",
+      "options": ["Air pollution", "Fertilizer use", "Deforestation", "Monoculture"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 6,
+      "question": "Which of the following statements is true about GMOs (Genetically Modified Organisms)?",
+      "options": ["Improve biodiversity", "Can increase crop yields", "Have no environmental impact", "Are always harmful to health"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 7,
+      "question": "Which type of packaging is more environmentally sustainable?",
+      "options": ["Plastic", "Paper", "Glass", "Aluminum"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 8,
+      "question": "Which of the following is an example of sustainable fishing?",
+      "options": ["Trawling", "Seine fishing", "Bycatch", "Selective fishing"],
+      "correctAnswer": 3
+    },
+    {
+      "id": 9,
+      "question": "What is the advantage of organic farming over conventional farming?",
+      "options": ["Higher pesticide use", "Better soil conservation", "Greater environmental impact", "Lower food safety standards"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 10,
+      "question": "Which of the following practices helps reduce food waste?",
+      "options": ["Shorter expiration dates", "Reduced food production", "Composting", "Larger packaging"],
+      "correctAnswer": 2
+    }
+  ]
