@@ -1,4 +1,3 @@
-import { IpcNetConnectOpts } from 'net'
 import React from 'react'
 import Button from './Button';
 
