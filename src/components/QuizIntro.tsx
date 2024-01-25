@@ -10,12 +10,12 @@ const QuizIntro: React.FC<IProps> = ({onStartQuiz}) =>{
   const handleShareClick = () => {
     if (navigator.share) {
       navigator.share({
-        title: 'Quiz sul Cibo',
-        text: 'Testa le tue conoscenze sul cibo e il suo impatto con questo quiz coinvolgente!',
+        title: 'Food Quiz',
+        text: 'Test your knowledge about food and its impact with this engaging quiz!',
         url: window.location.href,
       });
     } else {
-      alert('Questa funzionalità non è supportata dal tuo browser. Puoi condividere manualmente la pagina!');
+      alert('This functionality is not supported by your browser. You can share the page manually!');
     }
   };
 
