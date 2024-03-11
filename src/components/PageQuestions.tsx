@@ -15,6 +15,7 @@ interface IProps {
 const PageQuestions: React.FC<IProps> = ({questions, onClose, onChange}) => {
     const [currentIndex, setCurrentIndex] = useState<number>(0);
     const [userAnswers, setUserAnswers] = useState<(number | null)[]>(Array(questions.length).fill(null));
+    const [checkAnswer, setCheckAnswer] = useState<boolean>(false);
 
     const currentQuestion = questions[currentIndex];
 
@@ -22,11 +23,17 @@ const PageQuestions: React.FC<IProps> = ({questions, onClose, onChange}) => {
       if(direction === "next" && currentIndex+1 > questions.length-1){
         calculateTotaleScoreAndClose();
       }else if(direction === "next"){
-        setCurrentIndex(currentIndex+1);
-        onChange(currentIndex+1);
+        if(userAnswers[currentIndex] == null){
+          setCheckAnswer(true);
+        }else{
+          setCheckAnswer(false);
+          setCurrentIndex(currentIndex+1);
+          onChange(currentIndex+1);
+        }
       }else{
         setCurrentIndex(currentIndex-1);
         onChange(currentIndex-1);
+        setCheckAnswer(false);
       }
     }
 
@@ -70,6 +77,7 @@ const PageQuestions: React.FC<IProps> = ({questions, onClose, onChange}) => {
             </div>
           ))}
         </form>
+          {checkAnswer && <p className='text-red-500 text-lg'>You must choose an answer!</p>}
         </div>
         <div className='justify-between flex'>
           <Button 
